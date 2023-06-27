@@ -28,13 +28,13 @@ function paintToDo(newTodo) {
     const span = document.createElement("span");
     span.innerText = newTodo.text;
     const button = document.createElement("button");
-    button.innerText = '';
+    button.innerText = '❌';
     button.style.backgroundColor = "transparent";
     button.style.border = "none";
     button.addEventListener("click",deleteToDo)
     li.appendChild(span);
     li.appendChild(button);
-    toDolist.appendChild(li)
+    toDolist.appendChild(li);
     
 }
 /* 삭제기능도 가능하도록:span을 만들어서 li 내부에 자식으로 넣음 그 다음에 new ToDo에 입력받은 값을 span내부에 넣음 */
